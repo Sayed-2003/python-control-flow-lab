@@ -133,8 +133,20 @@ print('----------------------------------------------------------------------')
 
 def weather_advice():
     # Your control flow logic goes here
-    
-    pass
+    cold = input('is it cold? (yes/no) :')
+    rain = input('is it raining? (yes/no) :')
+
+    if cold == 'yes' and rain == 'yes':
+        print("Wear a waterproof coat.")
+    elif cold == 'yes' and rain == 'no':
+        print("Wear a warm coat.")
+    elif cold == 'no' and rain == 'yes':
+        print("Carry an umbrella.")
+    elif cold == 'no' and rain == 'no':
+        print("Wear light clothing.")
+    else:
+        print('enter a valid input')
+
 
 # Call the function
 weather_advice()
