@@ -73,7 +73,7 @@ print('----------------------------------------------------------------------')
 def check_voting_eligibility():
     # Your control flow logic goes here
     age = int(input('please enter your age: '))
-    if age > 18:
+    if age >= 18:
         print('your eligible to vote')
     elif age < 0:
         print('negative number')
